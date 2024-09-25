@@ -14,8 +14,8 @@ def classificar_imc(imc):
     
 def main():
     try:
-        peso = float(input("Digite seu peso em kg: "))
-        altura = float(input("Digite sua altura em metros: "))
+        peso = float(input("Digite seu peso em kg: ").replace(",","."))
+        altura = float(input("Digite sua altura em metros: ").replace(",","."))
 
         imc = calcular_imc(peso, altura)
         classificacao = classificar_imc(imc)
